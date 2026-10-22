@@ -18,7 +18,7 @@ st.set_page_config(
 api_key = os.environ.get("GROQ_API_KEY")
 
 if not api_key:
-    st.error("⚠️ A variável de ambiente GROQ_API_KEY não foi configurada no servidor Render.")
+    st.error("⚠️ A Variável de ambiente GROQ_API_KEY não foi configurada no servidor Render.")
     st.stop()
 
 client = Groq(api_key=api_key)
